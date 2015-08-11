@@ -9,55 +9,6 @@
 	<session-config>
 	  <session-timeout>30</session-timeout>
 	</session-config>
-	<listener>
-	  <listener-class>ua.com.benlinus92.server.DatabaseContextListener</listener-class>
-	</listener>
-	<listener>
-	  <listener-class>ua.com.benlinus92.server.UsersListener</listener-class>
-	</listener>
-	<listener>
-	  <listener-class>ua.com.benlinus92.server.MessageList</listener-class>
-	</listener>
-	<servlet>
-	  <servlet-name>ChatOperation</servlet-name>
-	  <servlet-class>ua.com.benlinus92.server.OpenChatServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	  <servlet-name>ChatOperation</servlet-name>
-	  <url-pattern>/send</url-pattern>
-	  <url-pattern>/update</url-pattern>
-	  <url-pattern>/loadmsg</url-pattern>
-	  <url-pattern>/getusers</url-pattern>
-	</servlet-mapping>
-	<servlet>
-	  <servlet-name>Chat</servlet-name>
-	  <jsp-file>/openchat.jsp</jsp-file>
-	</servlet>
-	<servlet-mapping>
-	  <servlet-name>Chat</servlet-name>
-	  <url-pattern>/chat</url-pattern>
-	</servlet-mapping>
-	<servlet>
-	  <servlet-name>Login</servlet-name>
-	  <servlet-class>ua.com.benlinus92.server.LoginServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	  <servlet-name>Login</servlet-name>
-	  <url-pattern>/login</url-pattern>
-	  <url-pattern>/logout</url-pattern>
-	</servlet-mapping>
-	<filter>
-		<filter-name>Logged</filter-name>
-		<filter-class>ua.com.benlinus92.server.LoggedChatFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>Logged</filter-name>
-		<url-pattern>/chat</url-pattern>
-		<url-pattern>/openchat.jsp</url-pattern>
-	</filter-mapping>
-	<welcome-file-list>
-	  <welcome-file>index.html</welcome-file>
-	</welcome-file-list>
 	<welcome-file-list>
 	  <welcome-file>login.jsp</welcome-file>
 	</welcome-file-list>
