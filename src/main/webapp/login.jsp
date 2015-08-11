@@ -50,10 +50,10 @@
 <div class="row" style="background-color: #fff;  font-size: 14px; font-weight: normal; padding: 10px">
 	<form action="login" method="post">
 		<div class="form-group" style="padding-top: 10px">
-	      <input type="text" placeholder="ÐÐ¾Ð³Ð¸Ð½" name="login" class="form-control">
+	      <input type="text" placeholder="Логин" name="login" class="form-control">
 	    </div>
 	    <div class="form-group">
-			<input type="password" placeholder="ÐÐ°ÑÐ¾Ð»Ñ" name="password" class="form-control">
+			<input type="password" placeholder="Пароль" name="password" class="form-control">
 		</div>
 		<br>
 		<div class="text-center">
