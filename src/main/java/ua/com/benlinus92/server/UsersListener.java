@@ -49,7 +49,7 @@ public class UsersListener implements ServletContextListener, HttpSessionListene
 		for(Entry<HttpSession, String> entry : users.entrySet()) {
 			HttpSession hs = entry.getKey();
 			String nick = entry.getValue();
-			users.remove(entry.getKey(), entry.getValue());
+			//users.remove(entry.getKey(), entry.getValue());
 			hs.setAttribute("users_update", true);
 			users.put(hs, nick);
 			System.out.println(nick);
@@ -74,7 +74,7 @@ public class UsersListener implements ServletContextListener, HttpSessionListene
 		for(Entry<HttpSession, String> entry : users.entrySet()) {
 			HttpSession hs = entry.getKey();
 			String nick = entry.getValue();
-			users.remove(entry.getKey(), entry.getValue());
+			//users.remove(entry.getKey(), entry.getValue());
 			hs.setAttribute("users_update", true);
 			users.put(hs, nick);
 			System.out.println(nick);

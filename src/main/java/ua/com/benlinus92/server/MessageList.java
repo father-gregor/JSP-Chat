@@ -50,7 +50,7 @@ public class MessageList implements ServletContextListener {
 			if(lastMsgDate.before(listDate))
 				updateList.add(m);
 			else
-				i = 0; //чтобы не листать весь список
+				i = 0; //С‡С‚РѕР±С‹ РЅРµ Р»РёСЃС‚Р°С‚СЊ РІРµСЃСЊ СЃРїРёСЃРѕРє
 		}
 		Collections.reverse(updateList);
 		JsonMessages result = new JsonMessages(updateList.toArray(new Message[updateList.size()]));

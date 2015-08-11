@@ -16,9 +16,9 @@ public class LoginServlet extends HttpServlet {
 	private static final String PASSWORD_PATTERN = "[a-zA-Z_0-9\\-]+";
 	private static final String LOGIN = "/login";
 	private static final String LOGOUT = "/logout";
-	private static final String ERR_01 = "Поля должны быть заполнены!";
-	private static final String ERR_02 = "Неверный логин или пароль!";
-	private static final String ERR_03 = "Такой пользователь уже существует!";
+	private static final String ERR_01 = "РџРѕР»СЏ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅС‹!";
+	private static final String ERR_02 = "РќРµРІРµСЂРЅС‹Р№ Р»РѕРіРёРЅ РёР»Рё РїР°СЂРѕР»СЊ!";
+	private static final String ERR_03 = "РўР°РєРѕР№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
        
     public LoginServlet() {
         super();
