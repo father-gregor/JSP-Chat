@@ -7,7 +7,7 @@
         <properties>
             <property name="hibernate.show_sql" value="true" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}?useUnicode=true&amp;characterEncoding=UTF8"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}"/>
             <property name="javax.persistence.jdbc.user" value="adminxXvHAPA" />
             <property name="javax.persistence.jdbc.password" value="3BV5XlugchiY" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>

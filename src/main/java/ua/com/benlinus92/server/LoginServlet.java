@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
 		if(req.getServletPath().equals(LOGIN)) {
 			String login = req.getParameter("login");
 			String password = req.getParameter("password");
-			DatabaseSQL dsql = (DatabaseSQL)getServletContext().getAttribute("dsql");
+			DatabaseSQL dsql = DatabaseSQL.getInstance(); //(DatabaseSQL)getServletContext().getAttribute("dsql");
 			
 			if(!login.equals("") && !password.equals("")) {
 				boolean regResult = false;

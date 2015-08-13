@@ -12,7 +12,14 @@ public class LoginProcess {
 	@SuppressWarnings("unchecked")
 	public static boolean checkUser(String login, String password, DatabaseSQL dsql) {
 		boolean res = false;
-		EntityManager em = dsql.getEntityManagerFactory().createEntityManager();
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!+++++++++++++++++++++++++++" + System.getenv("OPENSHIFT_MYSQL_DB_PORT"));
+		System.out.println("Sunshine");
+		if(dsql == null)
+			System.out.println("Some words");
+		else
+			System.out.println("Little less");
+		EntityManager em = null;
+		dsql.getEntityManagerFactory();//.createEntityManager();
 		try {
 			Query q = em.createQuery("SELECT r from Login r WHERE r.login = :login", Login.class);
 			q.setParameter("login", login);

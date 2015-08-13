@@ -12,11 +12,15 @@ public class DatabaseSQL {
 	
 	public static DatabaseSQL getInstance() {
 		if(emf == null) {
-			emf = Persistence.createEntityManagerFactory(DB_NAME);
+			emf = Persistence.createEntityManagerFactory(System.getenv("OPENSHIFT_APP_NAME"));
+			System.out.println("All fine");
+			if(emf == null)
+				System.out.println("NOT OK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 		return dsql;
 	}
 	public EntityManagerFactory getEntityManagerFactory() {
+		System.out.println("NOT OK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		return emf;
 	}
 	
