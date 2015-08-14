@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
        
     public LoginServlet() {
         super();
-    }
+    } 
     
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     	if(req.getServletPath().equals(LOGOUT)) {

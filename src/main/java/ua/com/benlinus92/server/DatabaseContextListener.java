@@ -18,6 +18,7 @@ public class DatabaseContextListener implements ServletContextListener {
 
     public void contextInitialized(ServletContextEvent event)  { 
         ServletContext sc = event.getServletContext();
+        System.out.println("Chugga Chugga");
         dsql = DatabaseSQL.getInstance();
         sc.setAttribute("dsql", dsql);
     }
