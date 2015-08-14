@@ -18,8 +18,7 @@ public class LoginProcess {
 			System.out.println("Some words");
 		else
 			System.out.println("Little less");
-		EntityManager em = null;
-		dsql.getEntityManagerFactory();//.createEntityManager();
+		EntityManager em = dsql.getEntityManagerFactory().createEntityManager();
 		try {
 			Query q = em.createQuery("SELECT r from Login r WHERE r.login = :login", Login.class);
 			q.setParameter("login", login);
