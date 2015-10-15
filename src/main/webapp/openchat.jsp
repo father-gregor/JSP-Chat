@@ -22,7 +22,7 @@
     <div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="chat">Общий чат</a></li>
-        <li><a class="menus" href="#">Чат-комнаты</a></li>
+        <!--<li><a class="menus" href="#">Чат-комнаты</a></li>-->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="logout" class="exit"><span class="glyphicon glyphicon-log-in"></span> Выход</a></li>

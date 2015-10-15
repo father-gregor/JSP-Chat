@@ -10,7 +10,7 @@ import javax.servlet.ServletContextListener;
 
 public class MessageList implements ServletContextListener {
 	
-	private static final int MESSAGE_LIMIT = 100;
+	private static final int MESSAGE_LIMIT = 15;
 	private static final MessageList msgList = new MessageList();
 
 	private List<Message> list = new ArrayList<Message>();
